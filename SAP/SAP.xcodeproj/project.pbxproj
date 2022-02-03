@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		63CB862427ABE4CC004C3BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB862327ABE4CC004C3BC0 /* AppDelegate.swift */; };
 		63CB862627ABE4CC004C3BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB862527ABE4CC004C3BC0 /* SceneDelegate.swift */; };
-		63CB862827ABE4CC004C3BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB862727ABE4CC004C3BC0 /* ViewController.swift */; };
 		63CB862B27ABE4CC004C3BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB862927ABE4CC004C3BC0 /* Main.storyboard */; };
 		63CB862D27ABE4CE004C3BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CB862C27ABE4CE004C3BC0 /* Assets.xcassets */; };
 		63CB863027ABE4CE004C3BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB862E27ABE4CE004C3BC0 /* LaunchScreen.storyboard */; };
@@ -39,7 +38,6 @@
 		63CB862027ABE4CC004C3BC0 /* SAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CB862327ABE4CC004C3BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63CB862527ABE4CC004C3BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63CB862727ABE4CC004C3BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63CB862A27ABE4CC004C3BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63CB862C27ABE4CE004C3BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CB862F27ABE4CE004C3BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,13 +97,9 @@
 		63CB862227ABE4CC004C3BC0 /* SAP */ = {
 			isa = PBXGroup;
 			children = (
-				63CB862327ABE4CC004C3BC0 /* AppDelegate.swift */,
-				63CB862527ABE4CC004C3BC0 /* SceneDelegate.swift */,
-				63CB862727ABE4CC004C3BC0 /* ViewController.swift */,
-				63CB862927ABE4CC004C3BC0 /* Main.storyboard */,
-				63CB862C27ABE4CE004C3BC0 /* Assets.xcassets */,
-				63CB862E27ABE4CE004C3BC0 /* LaunchScreen.storyboard */,
-				63CB863127ABE4CE004C3BC0 /* Info.plist */,
+				63CB865527ABE530004C3BC0 /* Supporting Files */,
+				63CB865427ABE52A004C3BC0 /* Resource */,
+				63CB865327ABE525004C3BC0 /* Source */,
 			);
 			path = SAP;
 			sourceTree = "<group>";
@@ -125,6 +119,33 @@
 				63CB864627ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift */,
 			);
 			path = SAPUITests;
+			sourceTree = "<group>";
+		};
+		63CB865327ABE525004C3BC0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		63CB865427ABE52A004C3BC0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				63CB862C27ABE4CE004C3BC0 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		63CB865527ABE530004C3BC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63CB863127ABE4CE004C3BC0 /* Info.plist */,
+				63CB862327ABE4CC004C3BC0 /* AppDelegate.swift */,
+				63CB862527ABE4CC004C3BC0 /* SceneDelegate.swift */,
+				63CB862E27ABE4CE004C3BC0 /* LaunchScreen.storyboard */,
+				63CB862927ABE4CC004C3BC0 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63CB862827ABE4CC004C3BC0 /* ViewController.swift in Sources */,
 				63CB862427ABE4CC004C3BC0 /* AppDelegate.swift in Sources */,
 				63CB862627ABE4CC004C3BC0 /* SceneDelegate.swift in Sources */,
 			);
@@ -440,7 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SAP/Info.plist;
+				INFOPLIST_FILE = "SAP/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,7 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SAP/Info.plist;
+				INFOPLIST_FILE = "SAP/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
