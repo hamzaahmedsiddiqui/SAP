@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 @testable import SAP
 class HistoryTableViewCellTest: XCTestCase {
-    private let reuseIdentifier = "HistoryTableViewCell"
+    private let reuseIdentifier = Constant.identifierForHistoryTableCell
     var sut: HistoryTableViewCell!
     var tableView: UITableView!
     private var dataSource: TableViewDataSource!
@@ -57,7 +57,7 @@ extension HistoryTableViewCellTest {
 }
 
 private class TableViewDataSource: NSObject, UITableViewDataSource {
-    private let reuseIdentifier = "HistoryTableViewCell"
+    private let reuseIdentifier = Constant.identifierForHistoryTableCell
     
     override init() {
         super.init()

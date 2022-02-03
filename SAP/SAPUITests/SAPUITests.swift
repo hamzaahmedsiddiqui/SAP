@@ -20,7 +20,6 @@ class SAPUITests: XCTestCase {
     }
     func TestSearchBar () {
         
-        
         let saptestSearchviewNavigationBar = XCUIApplication().navigationBars["SAPTest.SearchView"]
         let searchImagesSearchField = saptestSearchviewNavigationBar.searchFields["Search Images ..."]
         searchImagesSearchField.tap()
