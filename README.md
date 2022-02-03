@@ -17,7 +17,7 @@ results in a scrollable view.
 
 - Clone the repository.
 ```sh
-https://github.com/hamzaahmedsiddiqui/SAPCodeChallenge.git
+https://github.com/hamzaahmedsiddiqui/SAP.git
 ```
 - Run the app in xcode after cloning.
 
