@@ -1,6 +1,6 @@
 //
 //  PhotoCollectionViewCell.swift
-//  SAPTest
+//  SAP
 //
 //  Created by Hamza Ahmed on 31/01/2022.
 //
