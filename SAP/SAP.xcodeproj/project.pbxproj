@@ -15,6 +15,8 @@
 		63CB863B27ABE4CF004C3BC0 /* SAPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB863A27ABE4CF004C3BC0 /* SAPTests.swift */; };
 		63CB864527ABE4CF004C3BC0 /* SAPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB864427ABE4CF004C3BC0 /* SAPUITests.swift */; };
 		63CB864727ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB864627ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift */; };
+		63CB865927ABE5E3004C3BC0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB865727ABE5E3004C3BC0 /* Constant.swift */; };
+		63CB865A27ABE5E3004C3BC0 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB865827ABE5E3004C3BC0 /* Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		63CB864027ABE4CF004C3BC0 /* SAPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CB864427ABE4CF004C3BC0 /* SAPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPUITests.swift; sourceTree = "<group>"; };
 		63CB864627ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63CB865727ABE5E3004C3BC0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		63CB865827ABE5E3004C3BC0 /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		63CB865327ABE525004C3BC0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				63CB865627ABE5E3004C3BC0 /* Common */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -146,6 +151,15 @@
 				63CB862927ABE4CC004C3BC0 /* Main.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63CB865627ABE5E3004C3BC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				63CB865727ABE5E3004C3BC0 /* Constant.swift */,
+				63CB865827ABE5E3004C3BC0 /* Extention.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CB865A27ABE5E3004C3BC0 /* Extention.swift in Sources */,
 				63CB862427ABE4CC004C3BC0 /* AppDelegate.swift in Sources */,
 				63CB862627ABE4CC004C3BC0 /* SceneDelegate.swift in Sources */,
+				63CB865927ABE5E3004C3BC0 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
