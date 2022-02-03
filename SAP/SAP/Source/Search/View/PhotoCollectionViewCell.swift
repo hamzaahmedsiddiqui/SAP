@@ -7,6 +7,10 @@
 
 import UIKit
 import Kingfisher
+
+/*
+ I used Kingfisher because it is a powerful, pure-Swift library for downloading and caching images from the web.
+ */
 class PhotoCollectionViewCell: UICollectionViewCell {
     let placeholderImage = "placeholder-image"
     @IBOutlet weak var imageView: UIImageView!

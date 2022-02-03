@@ -6,7 +6,10 @@
 //
 
 import UIKit
-
+/**
+ Note: SearchViewController is now very basic. It could have been way much better in terms of design if given time.
+ 
+ */
 class SearchViewController: UIViewController {
     enum CollectionViewSection {
         case main
@@ -43,9 +46,9 @@ class SearchViewController: UIViewController {
     }
 }
 
-// MARK: - All functions.
-
+// MARK: - SearchViewController functions.
 extension SearchViewController{
+   
     private func setupView(){
         searchBar.placeholder = searchBarPlaceholder
         searchBar.delegate = self
@@ -55,9 +58,9 @@ extension SearchViewController{
         applySnapshot(animatingDifferences: false)
     }
     private func setLayoutForCollection(){
+        let itemSize = view.frame.width / 3
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        //        layout.sectionInset = UIEdgeInsets(top: , left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: 120, height: 120)
+        layout.itemSize = CGSize(width: itemSize, height: itemSize)
         layout.scrollDirection = .vertical
         collectionView.collectionViewLayout = layout
     }
@@ -79,7 +82,6 @@ extension SearchViewController{
             collectionView: collectionView,
             cellProvider: { (collectionView, indexPath, photo) ->
                 UICollectionViewCell? in
-                // 2
                 let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: self.reuseIdentifier,
                     for: indexPath) as? PhotoCollectionViewCell
@@ -90,12 +92,15 @@ extension SearchViewController{
         return dataSource
     }
     private func applySnapshot(animatingDifferences: Bool = true){
+        if viewModel.getPhotosArray().count == 0{
+            self.showAlert("No picture found", "")
+        }
         var snapShot = Snapshot()
         snapShot.appendSections([.main])
         snapShot.appendItems(viewModel.getPhotosArray())
         dataSource.apply(snapShot, animatingDifferences: animatingDifferences)
     }
-    
+
     private func getSearchData(searchText: String, pageNo: Int){
         viewModel.didUpdateSearchResult(searchText: searchText, pageNo: pageNo) { [weak self] result in
             guard let self = self else { return }
@@ -103,14 +108,36 @@ extension SearchViewController{
             case .success(_):
                 self.applySnapshot()
                 self.isWaitingForResult = false
+                
                 break
                 
             case .failure(let error):
                 //show alert
+                self.showAlert("Error", "There is some issue to get search result")
                 print(error.localizedDescription)
             }
         }
     }
+    /**
+     Displays alert
+     
+     - parameter title: String
+     - parameter message: String
+     */
+    private func showAlert(_ title: String, _ message: String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController.Style.alert.controller(
+                title: title,
+                message: message,
+                actions: [
+                    Constant.dismissButtonTitle.alertAction()
+                ])
+            self.present(alert, animated: true)
+        }
+    }
+    /*
+     we created these function to add or remove another view controller  into this view controller
+     */
     private func add(asChildViewController viewController: UIViewController) {
         addChild(viewController)
         view.addSubview(viewController.view)
@@ -133,12 +160,10 @@ extension SearchViewController{
 }
 
 // MARK: - UISearchBarDelegate.
-
 extension SearchViewController:UISearchBarDelegate{
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         showHistory()
         searchBar.showsCancelButton = true
-        
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -158,9 +183,11 @@ extension SearchViewController:UISearchBarDelegate{
     }
 }
 
-//MARK: - collectionViewDelegate
+//MARK: - collectionViewDelegate,UICollectionViewDelegateFlowLayout
 extension SearchViewController:UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
-    
+    /**
+     The collection View cell height and width is set according to show three items per row
+     */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let  size = collectionView.frame.size.width / CGFloat(3) - CGFloat((3 - 1)) * 5
         return CGSize(width: size, height: size)

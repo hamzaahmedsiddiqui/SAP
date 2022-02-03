@@ -10,15 +10,15 @@ import Alamofire
 import Alamofire_SwiftyJSON
 import SwiftyJSON
 
-//enum Result<T> {
-//    case success(T)
-//    case failure(Error)
-//}
+
 protocol NetworkManager {
     func requestData(parameters: [String: Any], httpMethod: HTTPMethod, completionHandler: @escaping ( Swift.Result<JSON, Error> ) -> Void)
 }
 
 // MARK: - base network class to call api
+/**
+ API call function for fetching search result
+ */
 final class NetworkManagerImplementation : NetworkManager {
   
     private let urlString = "\(Constant.baseUrl)api_key=\(Constant.apiKey)&format=json&nojsoncallback=1&safe_search=1"

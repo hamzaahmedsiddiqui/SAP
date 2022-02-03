@@ -16,7 +16,6 @@ class HistoryTableViewCellTest: XCTestCase {
     private var delegate: TableViewDelegate!
     
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 200, height: 400), style: .plain)
         let nib = UINib(nibName: reuseIdentifier, bundle: nil)
         

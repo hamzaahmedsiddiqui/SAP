@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// MARK: - searchViewModel
 protocol SearchViewModel {
     func didUpdateSearchResult(searchText : String, pageNo: Int, completionHandler : @escaping (Swift.Result<Bool,Error>) -> Void)
     func storeSearchHistory(searchText: String)
@@ -15,7 +15,7 @@ protocol SearchViewModel {
     func getPageNo()-> Int
     func getLastSearchText()-> String
 }
-
+// MARK: - SearchViewModelImplementation
 class SearchViewModelImplementation: SearchViewModel  {
     let service: SearchService
     private var photosArr: [Photo] = []

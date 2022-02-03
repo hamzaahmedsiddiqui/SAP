@@ -6,6 +6,15 @@
 //
 
 import Foundation
+import UIKit
+
+
+// MARK: - UserDefaults
+/**
+ -Extension for UserDefaults for saving/loading search history
+ -We can use another apporacch to save data like CoreData or SQLite but as data is too small thats why we used UserDefault to save the data.
+ */
+typealias AlertActionHandler = ((UIAlertAction) -> Void)
 
 extension UserDefaults {
     
@@ -19,5 +28,21 @@ extension UserDefaults {
             return []
         }
         return encodedData.map { try! JSONDecoder().decode(History.self, from: $0) }
+    }
+}
+extension String {
+    func alertAction(style: UIAlertAction.Style = .default, handler: AlertActionHandler? = nil) -> UIAlertAction {
+        return UIAlertAction(title: self, style: style, handler: handler)
+    }
+}
+extension UIAlertController.Style {
+    func controller(title: String, message: String, actions: [UIAlertAction]) -> UIAlertController {
+        let _controller = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: self
+        )
+        actions.forEach { _controller.addAction($0) }
+        return _controller
     }
 }

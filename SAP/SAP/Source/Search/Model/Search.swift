@@ -6,7 +6,9 @@
 //
 
 import Foundation
-
+/**
+ Model for Search data from API. I have added custom functions to customize the data based on the need.
+ */
 // MARK: - searchModel
 struct Search: Codable {
     let photos: Photos
