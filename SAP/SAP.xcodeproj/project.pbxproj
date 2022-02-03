@@ -13,9 +13,7 @@
 		63CB862B27ABE4CC004C3BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB862927ABE4CC004C3BC0 /* Main.storyboard */; };
 		63CB862D27ABE4CE004C3BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CB862C27ABE4CE004C3BC0 /* Assets.xcassets */; };
 		63CB863027ABE4CE004C3BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CB862E27ABE4CE004C3BC0 /* LaunchScreen.storyboard */; };
-		63CB863B27ABE4CF004C3BC0 /* SAPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB863A27ABE4CF004C3BC0 /* SAPTests.swift */; };
 		63CB864527ABE4CF004C3BC0 /* SAPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB864427ABE4CF004C3BC0 /* SAPUITests.swift */; };
-		63CB864727ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB864627ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift */; };
 		63CB865927ABE5E3004C3BC0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB865727ABE5E3004C3BC0 /* Constant.swift */; };
 		63CB865A27ABE5E3004C3BC0 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB865827ABE5E3004C3BC0 /* Extention.swift */; };
 		63CB867427ABE647004C3BC0 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB865D27ABE647004C3BC0 /* SearchService.swift */; };
@@ -32,6 +30,14 @@
 		63CB867F27ABE647004C3BC0 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB867127ABE647004C3BC0 /* HistoryTableViewCell.swift */; };
 		63CB868027ABE647004C3BC0 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CB867227ABE647004C3BC0 /* HistoryTableViewCell.xib */; };
 		63CB868127ABE647004C3BC0 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB867327ABE647004C3BC0 /* HistoryTableViewController.swift */; };
+		63CB869127ABE974004C3BC0 /* MockSearchResult.json in Resources */ = {isa = PBXBuildFile; fileRef = 63CB868327ABE974004C3BC0 /* MockSearchResult.json */; };
+		63CB869227ABE974004C3BC0 /* stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868527ABE974004C3BC0 /* stub.swift */; };
+		63CB869327ABE974004C3BC0 /* SearchViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868827ABE974004C3BC0 /* SearchViewControllerTest.swift */; };
+		63CB869427ABE974004C3BC0 /* SearchViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868927ABE974004C3BC0 /* SearchViewModelTest.swift */; };
+		63CB869527ABE974004C3BC0 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868B27ABE974004C3BC0 /* HistoryTableViewCell.swift */; };
+		63CB869627ABE974004C3BC0 /* HistoryViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868C27ABE974004C3BC0 /* HistoryViewControllerTest.swift */; };
+		63CB869727ABE974004C3BC0 /* HistoryViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868D27ABE974004C3BC0 /* HistoryViewModelTest.swift */; };
+		63CB869827ABE974004C3BC0 /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB868F27ABE974004C3BC0 /* MockSearchService.swift */; };
 		B89F777B6CE783FE7A8C34D2 /* Pods_SAPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1D900218F5CD661C3F1671 /* Pods_SAPTests.framework */; };
 		CE6908F71C472742330C7293 /* Pods_SAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913ECE3EFFB93375E54517CF /* Pods_SAP.framework */; };
 /* End PBXBuildFile section */
@@ -66,10 +72,8 @@
 		63CB862F27ABE4CE004C3BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63CB863127ABE4CE004C3BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63CB863627ABE4CF004C3BC0 /* SAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63CB863A27ABE4CF004C3BC0 /* SAPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPTests.swift; sourceTree = "<group>"; };
 		63CB864027ABE4CF004C3BC0 /* SAPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CB864427ABE4CF004C3BC0 /* SAPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPUITests.swift; sourceTree = "<group>"; };
-		63CB864627ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63CB865727ABE5E3004C3BC0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		63CB865827ABE5E3004C3BC0 /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		63CB865D27ABE647004C3BC0 /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 		63CB867127ABE647004C3BC0 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		63CB867227ABE647004C3BC0 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		63CB867327ABE647004C3BC0 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		63CB868327ABE974004C3BC0 /* MockSearchResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockSearchResult.json; sourceTree = "<group>"; };
+		63CB868527ABE974004C3BC0 /* stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stub.swift; sourceTree = "<group>"; };
+		63CB868827ABE974004C3BC0 /* SearchViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTest.swift; sourceTree = "<group>"; };
+		63CB868927ABE974004C3BC0 /* SearchViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModelTest.swift; sourceTree = "<group>"; };
+		63CB868B27ABE974004C3BC0 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		63CB868C27ABE974004C3BC0 /* HistoryViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewControllerTest.swift; sourceTree = "<group>"; };
+		63CB868D27ABE974004C3BC0 /* HistoryViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModelTest.swift; sourceTree = "<group>"; };
+		63CB868F27ABE974004C3BC0 /* MockSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
 		913ECE3EFFB93375E54517CF /* Pods_SAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C4AFA54B14017EB17543E4 /* Pods-SAPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAPTests.debug.xcconfig"; path = "Target Support Files/Pods-SAPTests/Pods-SAPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1F52E7CAF0FF3D5D80B385A /* Pods-SAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAP.release.xcconfig"; path = "Target Support Files/Pods-SAP/Pods-SAP.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +143,6 @@
 				A7C4AFA54B14017EB17543E4 /* Pods-SAPTests.debug.xcconfig */,
 				4E189AC1BD1986ED62B63A91 /* Pods-SAPTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -170,7 +181,10 @@
 		63CB863927ABE4CF004C3BC0 /* SAPTests */ = {
 			isa = PBXGroup;
 			children = (
-				63CB863A27ABE4CF004C3BC0 /* SAPTests.swift */,
+				63CB868327ABE974004C3BC0 /* MockSearchResult.json */,
+				63CB868627ABE974004C3BC0 /* Module */,
+				63CB868E27ABE974004C3BC0 /* Service */,
+				63CB868427ABE974004C3BC0 /* Stub */,
 			);
 			path = SAPTests;
 			sourceTree = "<group>";
@@ -179,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				63CB864427ABE4CF004C3BC0 /* SAPUITests.swift */,
-				63CB864627ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift */,
 			);
 			path = SAPUITests;
 			sourceTree = "<group>";
@@ -323,6 +336,50 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		63CB868427ABE974004C3BC0 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				63CB868527ABE974004C3BC0 /* stub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		63CB868627ABE974004C3BC0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				63CB868727ABE974004C3BC0 /* Search */,
+				63CB868A27ABE974004C3BC0 /* History */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		63CB868727ABE974004C3BC0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				63CB868827ABE974004C3BC0 /* SearchViewControllerTest.swift */,
+				63CB868927ABE974004C3BC0 /* SearchViewModelTest.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		63CB868A27ABE974004C3BC0 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				63CB868B27ABE974004C3BC0 /* HistoryTableViewCell.swift */,
+				63CB868C27ABE974004C3BC0 /* HistoryViewControllerTest.swift */,
+				63CB868D27ABE974004C3BC0 /* HistoryViewModelTest.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		63CB868E27ABE974004C3BC0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				63CB868F27ABE974004C3BC0 /* MockSearchService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		FAF9AD936C44029F1DFF423C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CB869127ABE974004C3BC0 /* MockSearchResult.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +655,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63CB863B27ABE4CF004C3BC0 /* SAPTests.swift in Sources */,
+				63CB869427ABE974004C3BC0 /* SearchViewModelTest.swift in Sources */,
+				63CB869827ABE974004C3BC0 /* MockSearchService.swift in Sources */,
+				63CB869327ABE974004C3BC0 /* SearchViewControllerTest.swift in Sources */,
+				63CB869627ABE974004C3BC0 /* HistoryViewControllerTest.swift in Sources */,
+				63CB869527ABE974004C3BC0 /* HistoryTableViewCell.swift in Sources */,
+				63CB869227ABE974004C3BC0 /* stub.swift in Sources */,
+				63CB869727ABE974004C3BC0 /* HistoryViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +670,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63CB864527ABE4CF004C3BC0 /* SAPUITests.swift in Sources */,
-				63CB864727ABE4CF004C3BC0 /* SAPUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +840,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -806,6 +870,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
