@@ -11,7 +11,7 @@ results in a scrollable view.
 
 ## Prerequisites
 - Xcode 13
-- iOS 14.0+
+- iOS 15.0+
 
 ## Guide
 
