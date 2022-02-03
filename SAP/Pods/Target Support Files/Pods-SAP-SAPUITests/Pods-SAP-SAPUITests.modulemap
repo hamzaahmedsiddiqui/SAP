@@ -1,0 +1,6 @@
+framework module Pods_SAP_SAPUITests {
+  umbrella header "Pods-SAP-SAPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

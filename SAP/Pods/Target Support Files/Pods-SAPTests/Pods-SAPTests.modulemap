@@ -1,0 +1,6 @@
+framework module Pods_SAPTests {
+  umbrella header "Pods-SAPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
