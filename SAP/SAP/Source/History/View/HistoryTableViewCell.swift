@@ -9,6 +9,7 @@ import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
     @IBOutlet weak var lblSearchedText: UILabel!
+    
     var cellViewModel : HistoryCellViewModel!{
         didSet{
             configCell()

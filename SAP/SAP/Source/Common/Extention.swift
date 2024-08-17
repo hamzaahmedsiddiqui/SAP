@@ -27,7 +27,9 @@ extension UserDefaults {
         guard let encodedData = UserDefaults.standard.array(forKey: Constant.historyArrayKey) as? [Data] else {
             return []
         }
-        return encodedData.map { try! JSONDecoder().decode(History.self, from: $0) }
+        return encodedData.map {
+            try! JSONDecoder().decode(History.self, from: $0)
+        }
     }
 }
 extension String {

@@ -10,13 +10,5 @@ target 'SAP' do
   pod 'Alamofire-SwiftyJSON'
   pod 'Alamofire'
   
-  target 'SAPTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SAPUITests' do
-    # Pods for testing
-  end
 
 end
